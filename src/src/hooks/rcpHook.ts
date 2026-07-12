@@ -1,5 +1,5 @@
-import type { Logger } from "../logger";
-import type { ObjectAudioPatcher } from "../objectAudioPatcher";
+import { Logger } from "../logger";
+import { ObjectAudioPatcher } from "../objectAudioPatcher";
 
 export class RcpHook {
     private registered = false;

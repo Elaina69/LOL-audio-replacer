@@ -35,7 +35,9 @@ export class LOLAudioReplacerApp {
     private readonly logger = new Logger(this.stats, () => this.config);
     private readonly configLoader = new ConfigLoader(this.resolver, this.logger);
     private readonly audioRule = new AudioRule(this.config, this.resolver, this.logger);
+    
     private readonly patcher = new ObjectAudioPatcher(this.audioRule);
+
     private readonly rcpHook = new RcpHook(this.patcher, this.logger, this.stats);
     private readonly xhrHook = new XhrHook(this.audioRule, this.logger, this.stats);
     private readonly htmlAudioHook = new HtmlAudioHook(this.audioRule, this.logger, this.stats);

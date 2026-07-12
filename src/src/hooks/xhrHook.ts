@@ -1,5 +1,5 @@
-import type { Logger } from "../logger";
-import type { AudioRule } from "../audioRule";
+import { Logger } from "../logger";
+import { AudioRule } from "../audioRule";
 
 export class XhrHook {
     constructor(
